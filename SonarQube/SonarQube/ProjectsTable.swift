@@ -62,17 +62,11 @@ class ProjectsTable: UITableViewController {
         return cell
     }
     
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        selectedProject = projects[indexPath.item]
-        println("tableView \(selectedProject)")
-    }
-    
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "segueToDetails") {
-            var detailsViewController = (segue.destinationViewController as! UINavigationController).viewControllers[0] as! ViewController;
-            println(selectedProject)
-            var cell = sender as! ProjectCell
+            let detailsViewController = (segue.destinationViewController as! UINavigationController).viewControllers[0] as! ViewController;
+            let cell = sender as! ProjectCell
             detailsViewController.projectId = cell.id
         }
     }

@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
 
+    @IBOutlet weak var projectNameLabel: UILabel!
     
     var projectId: Int!
 

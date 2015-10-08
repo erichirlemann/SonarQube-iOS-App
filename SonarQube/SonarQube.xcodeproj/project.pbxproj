@@ -168,6 +168,8 @@
 		BF727A791BC650A300BF799D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0710;
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = SonarSource;
 				TargetAttributes = {
@@ -425,6 +427,7 @@
 				BF727AA21BC650A400BF799D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BF727AA31BC650A400BF799D /* Build configuration list for PBXNativeTarget "SonarQubeTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +436,7 @@
 				BF727AA51BC650A400BF799D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
