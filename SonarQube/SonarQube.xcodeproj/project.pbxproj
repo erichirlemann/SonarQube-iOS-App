@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AD4D3951BC6880900A47488 /* SonarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3941BC6880900A47488 /* SonarDataManager.swift */; settings = {ASSET_TAGS = (); }; };
+		6AD4D3971BC68A5F00A47488 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
 		BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A861BC650A300BF799D /* AppDelegate.swift */; };
 		BF727A891BC650A300BF799D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A881BC650A300BF799D /* ViewController.swift */; };
 		BF727A8C1BC650A300BF799D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF727A8A1BC650A300BF799D /* Main.storyboard */; };
@@ -30,6 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AD4D3941BC6880900A47488 /* SonarDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SonarDataManager.swift; path = SonarQube/SonarDataManager.swift; sourceTree = "<group>"; };
+		6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		BF727A811BC650A300BF799D /* SonarQube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonarQube.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF727A851BC650A300BF799D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF727A861BC650A300BF799D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 			children = (
 				BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */,
 				BF727AAB1BC65C6900BF799D /* SonarProject.swift */,
+				6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */,
+				6AD4D3941BC6880900A47488 /* SonarDataManager.swift */,
 				BF727A831BC650A300BF799D /* SonarQube */,
 				BF727A991BC650A400BF799D /* SonarQubeTests */,
 				BF727A821BC650A300BF799D /* Products */,
@@ -229,6 +235,8 @@
 				BF727AAA1BC65C0700BF799D /* ProjectsTable.swift in Sources */,
 				BF727A891BC650A300BF799D /* ViewController.swift in Sources */,
 				BF727AA71BC6543100BF799D /* ProjectCell.swift in Sources */,
+				6AD4D3971BC68A5F00A47488 /* SwiftyJSON.swift in Sources */,
+				6AD4D3951BC6880900A47488 /* SonarDataManager.swift in Sources */,
 				BF727AAE1BC65D7400BF799D /* SonarQubeAPI.swift in Sources */,
 				BF727AAC1BC65C6900BF799D /* SonarProject.swift in Sources */,
 				BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */,

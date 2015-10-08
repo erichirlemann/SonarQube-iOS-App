@@ -36,4 +36,6 @@ class SonarProject {
         self.name = name
         self.qualityGate = QualityGate.fromString(qualityGate)!
     }
+    
+
 }
