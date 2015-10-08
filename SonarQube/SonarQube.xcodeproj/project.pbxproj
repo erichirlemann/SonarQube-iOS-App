@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6AD4D3951BC6880900A47488 /* SonarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3941BC6880900A47488 /* SonarDataManager.swift */; settings = {ASSET_TAGS = (); }; };
-		6AD4D3971BC68A5F00A47488 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */; settings = {ASSET_TAGS = (); }; };
+		6AD4D3951BC6880900A47488 /* SonarDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3941BC6880900A47488 /* SonarDataManager.swift */; };
+		6AD4D3971BC68A5F00A47488 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */; };
 		BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A861BC650A300BF799D /* AppDelegate.swift */; };
 		BF727A891BC650A300BF799D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A881BC650A300BF799D /* ViewController.swift */; };
 		BF727A8C1BC650A300BF799D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF727A8A1BC650A300BF799D /* Main.storyboard */; };

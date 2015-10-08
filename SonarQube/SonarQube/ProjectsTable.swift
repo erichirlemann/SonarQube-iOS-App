@@ -58,6 +58,7 @@ class ProjectsTable: UITableViewController {
         if (segue.identifier == "segueToDetails") {
             let detailsViewController = segue.destinationViewController as! ViewController;
             let cell = sender as! ProjectCell
+            print(cell.project)
             detailsViewController.project = cell.project
         }
     }

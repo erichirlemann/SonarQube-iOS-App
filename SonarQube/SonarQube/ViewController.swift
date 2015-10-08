@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var rect1: UIView!
     @IBOutlet weak var qualityGateMessage: UILabel!
     @IBOutlet weak var qualityGateImage: UIImageView!
     
@@ -26,6 +27,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        rect1.layer.borderWidth = 1
+        rect1.layer.borderColor = UIColor.lightGrayColor().CGColor
         
         title = "\(project.name)"
         qualityGateMessage.text! = project.qualityGate.getMessage()
