@@ -41,11 +41,13 @@ class SonarProject {
     var id: Int
     var name: String
     var qualityGate: QualityGate
+    var properties: [String:String]
     
     init(_ id: Int, _ name: String, _ qualityGate: String) {
         self.id = id;
         self.name = name
         self.qualityGate = QualityGate.fromString(qualityGate)!
+        self.properties = [String:String]()
     }
     
 

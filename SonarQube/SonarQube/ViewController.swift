@@ -36,19 +36,19 @@ class ViewController: UIViewController {
         for property in properties {
             let value = property.1
             switch property.0 {
-            case "issues":
+            case "violations":
                 issues.text! = value
-            case "debt":
+            case "sqale_index":
                 debt.text! = value
-            case "blocker issues":
+            case "blocker_violations":
                 blockerIssues.text! = value
-            case "critical issues":
+            case "critical_violations":
                 criticalIssues.text! = value
-            case "major issues":
+            case "major_violations":
                 MajorIssues.text! = value
-            case "minor issues":
+            case "minor_violations":
                 MinorIssues.text! = value
-            case "info issues":
+            case "info_violations":
                 InfoIssues.text! = value
             default:
                 break

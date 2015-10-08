@@ -34,8 +34,10 @@ class SonarQubeAPI {
                     
                     print("Processing \(key)")
                     // will be filled by processing of measures
-                    var alert_status : String = "";
-                    var quality_gate : String = "";
+                    var alert_status : String = "(none)"
+                    var quality_gate : String = ""
+                    var properties = [String:String]()
+
 
                     // measures requires a bit more work
                     let measures = project["msr"].array
@@ -46,16 +48,39 @@ class SonarQubeAPI {
                             let data : String = measure["data"].string!
                             let data_obj = NSString(string: data)
                             let QG_raw = data_obj.dataUsingEncoding(NSUTF8StringEncoding)
+                            let QG_obj = JSON(data: QG_raw!)
+                                
                             // TO DO continue the processing
                             quality_gate = data
                             
                         } else if measure["key"].string == "alert_status"
                             && measure["data"].string != nil{
                             alert_status = measure["data"].string!
+                        } else if
+                            (measure["key"].string == "violations"
+                                ||
+                                measure["key"].string == "blocker_violations"
+                                ||
+                                measure["key"].string == "critical_violations"
+                                ||
+                                measure["key"].string == "major_violations"
+                                ||
+                                measure["key"].string == "minor_violations"
+                                ||
+                                measure["key"].string == "info_violations"
+                                ||
+                                measure["key"].string == "sqale_index"
+                                )
+                            && measure["frmt_val"].string != nil
+                        {
+                                let formattedValue = measure["frmt_val"].string!
+                                properties[measure["key"].string!] = formattedValue
+                                
                         }
                     }
                     
                     let projectObj = SonarProject(id!,name!, alert_status)
+                    projectObj.properties = properties
                     returned.append(projectObj)
                 }
             }
@@ -74,14 +99,6 @@ class SonarQubeAPI {
     }
     
     static func getProperties(project: SonarProject) -> [String: String] {
-        return [
-            "blocker issues": "104",
-            "critical issues": "0",
-            "major issues": "53",
-            "minor issues": "45533",
-            "info issues": "443",
-            "debt": "3d 1h",
-            "issues": "153"
-        ]
+        return project.properties
     }
 }

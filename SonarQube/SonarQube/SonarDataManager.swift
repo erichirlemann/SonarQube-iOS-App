@@ -9,9 +9,9 @@
 
 import Foundation
 
-let DoryQGURL = "https://dory.internal.sonarsource.com/api/resources?format=json&depth=1&scopes=PRJ&qualifiers=TRK&metrics=team_at_sonarsource,alert_status,quality_gate_details,last_commit_date"
+let DoryQGURL = "https://dory.internal.sonarsource.com/api/resources?format=json&depth=1&scopes=PRJ&qualifiers=TRK&metrics=team_at_sonarsource,alert_status,quality_gate_details,issues,violations,blocker_violations,critical_violations,major_violations,minor_violations,info_violations"
 
-let NemoQGURL = "http://nemo.sonarqube.org/api/resources?format=json&depth=1&scopes=PRJ&qualifiers=TRK&metrics=team_at_sonarsource,alert_status,quality_gate_details"
+let NemoQGURL = "http://nemo.sonarqube.org/api/resources?format=json&depth=1&scopes=PRJ&qualifiers=TRK&metrics=team_at_sonarsource,alert_status,quality_gate_details,sqale_index,violations,blocker_violations,critical_violations,major_violations,minor_violations,info_violations"
 
 
 class SonarDataManager {
