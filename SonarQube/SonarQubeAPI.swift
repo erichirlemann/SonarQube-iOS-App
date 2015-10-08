@@ -13,6 +13,9 @@ class SonarQubeAPI {
     static func getProjects()-> [SonarProject] {
         
         // create a semaphore to deal with the asynch call
+        // it is the poorest implementation
+        // look at http://www.raywenderlich.com/79150/grand-central-dispatch-tutorial-swift-part-2
+        // TO DO improve the handling
         let semaphore = dispatch_semaphore_create(0) // 1
         
         var returned = [SonarProject]()
@@ -30,10 +33,9 @@ class SonarQubeAPI {
                     let name = project["name"].string
                     
                     print("Processing \(key)")
-                    
-                    let projectObj = SonarProject(id!,name!, "OK")
-                    returned.append(projectObj)
-                    print("Got \(returned.count)")
+                    // will be filled by processing of measures
+                    var alert_status : String = "";
+                    var quality_gate : String = "";
 
                     // measures requires a bit more work
                     let measures = project["msr"].array
@@ -44,13 +46,17 @@ class SonarQubeAPI {
                             let data : String = measure["data"].string!
                             let data_obj = NSString(string: data)
                             let QG_raw = data_obj.dataUsingEncoding(NSUTF8StringEncoding)
-                            let qg = JSON(data: QG_raw!)
+                            // TO DO continue the processing
+                            quality_gate = data
                             
-                            print(qg)
-                            
+                        } else if measure["key"].string == "alert_status"
+                            && measure["data"].string != nil{
+                            alert_status = measure["data"].string!
                         }
                     }
                     
+                    let projectObj = SonarProject(id!,name!, alert_status)
+                    returned.append(projectObj)
                 }
             }
             
