@@ -3,6 +3,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9040"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,27 +20,188 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Quality " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-5s-t6j">
-                                <rect key="frame" x="139" y="89" width="59" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quality " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JQ5-5s-t6j">
+                                <rect key="frame" x="59" y="86" width="521" height="25"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="q5r-IN-WMq">
+                                <rect key="frame" x="20" y="86" width="25" height="25"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="GAy-f0-YFE"/>
+                                    <constraint firstAttribute="height" constant="25" id="Spr-wl-zYW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blocker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uC4-fx-14n">
+                                <rect key="frame" x="43" y="254" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BlockerSeverity" translatesAutoresizingMaskIntoConstraints="NO" id="VqX-ph-ANC">
+                                <rect key="frame" x="20" y="257" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HmW-QQ-aLp" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="254" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Debt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwf-pg-vVm">
+                                <rect key="frame" x="127" y="138" width="38" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Issues" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5I-Fk-cCL">
+                                <rect key="frame" x="20" y="138" width="49" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9d 1h" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="go5-D1-Bgh" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="173" width="85" height="24"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="6yC-SF-Mwn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.13725490196078433" green="0.41568627450980389" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJa-6o-5kA" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="20" y="173" width="81" height="24"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Critical" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJL-Gc-kK4">
+                                <rect key="frame" x="43" y="280" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CriticalSeverity" translatesAutoresizingMaskIntoConstraints="NO" id="lJz-TN-g7t">
+                                <rect key="frame" x="20" y="283" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="40Z-V6-0rX" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="280" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Major" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bL9-WZ-nY4">
+                                <rect key="frame" x="43" y="306" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MajorSeverity" translatesAutoresizingMaskIntoConstraints="NO" id="bdr-Sn-Qvc">
+                                <rect key="frame" x="20" y="309" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tr-FT-v1Q" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="306" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Minor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ud-52-tpc">
+                                <rect key="frame" x="43" y="332" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MinorSeverity" translatesAutoresizingMaskIntoConstraints="NO" id="wSN-oq-MCB">
+                                <rect key="frame" x="20" y="335" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXg-5x-UyM" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="332" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7yo-P1-ahf">
+                                <rect key="frame" x="43" y="358" width="58" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="InfoSeverity" translatesAutoresizingMaskIntoConstraints="NO" id="r4A-6p-vsT">
+                                <rect key="frame" x="20" y="361" width="15" height="15"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E0U-1I-Yv0" customClass="UnderlinedLabel" customModule="SonarQube" customModuleProvider="target">
+                                <rect key="frame" x="127" y="358" width="85" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.13725490200000001" green="0.41568627450000001" blue="0.58823529409999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gwf-pg-vVm" firstAttribute="baseline" secondItem="k5I-Fk-cCL" secondAttribute="baseline" id="0CH-hG-VV8"/>
+                            <constraint firstItem="JQ5-5s-t6j" firstAttribute="leading" secondItem="q5r-IN-WMq" secondAttribute="trailing" id="0FA-jJ-R9L"/>
+                            <constraint firstItem="q5r-IN-WMq" firstAttribute="leading" secondItem="k5I-Fk-cCL" secondAttribute="leading" id="2Q7-6L-KM8"/>
+                            <constraint firstItem="go5-D1-Bgh" firstAttribute="leading" secondItem="AJa-6o-5kA" secondAttribute="trailing" constant="26" id="AL1-qB-0Je"/>
+                            <constraint firstItem="q5r-IN-WMq" firstAttribute="top" secondItem="JQ5-5s-t6j" secondAttribute="top" id="DZT-eL-vlr"/>
+                            <constraint firstItem="go5-D1-Bgh" firstAttribute="baseline" secondItem="AJa-6o-5kA" secondAttribute="baseline" id="FwR-Mm-4sJ"/>
+                            <constraint firstItem="q5r-IN-WMq" firstAttribute="bottom" secondItem="JQ5-5s-t6j" secondAttribute="bottom" id="FzI-Bf-nco"/>
+                            <constraint firstItem="q5r-IN-WMq" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="22" id="MHA-P0-96f"/>
+                            <constraint firstItem="AJa-6o-5kA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="V70-w1-cCw"/>
+                            <constraint firstItem="go5-D1-Bgh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="127" id="g48-e8-6ir"/>
+                            <constraint firstItem="go5-D1-Bgh" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="173" id="gzc-3l-WNT"/>
+                            <constraint firstItem="gwf-pg-vVm" firstAttribute="leading" secondItem="k5I-Fk-cCL" secondAttribute="trailing" constant="58" id="jtH-Bc-qiY"/>
+                            <constraint firstItem="k5I-Fk-cCL" firstAttribute="top" secondItem="q5r-IN-WMq" secondAttribute="bottom" constant="27" id="oAQ-i3-nmh"/>
+                            <constraint firstItem="JQ5-5s-t6j" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="pzO-7t-GEZ"/>
+                            <constraint firstItem="q5r-IN-WMq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="rOK-B3-HA5"/>
+                            <constraint firstItem="go5-D1-Bgh" firstAttribute="firstBaseline" secondItem="AJa-6o-5kA" secondAttribute="baseline" id="ugl-l1-u77"/>
+                            <constraint firstItem="JQ5-5s-t6j" firstAttribute="leading" secondItem="q5r-IN-WMq" secondAttribute="trailing" constant="14" id="xAy-z9-vug"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="0FA-jJ-R9L"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="tc8-t0-HbZ"/>
                     <connections>
-                        <outlet property="projectNameLabel" destination="JQ5-5s-t6j" id="LX0-gh-IFN"/>
+                        <outlet property="InfoIssues" destination="E0U-1I-Yv0" id="VFM-f2-ED8"/>
+                        <outlet property="MajorIssues" destination="2tr-FT-v1Q" id="J6K-ZF-Jyd"/>
+                        <outlet property="MinorIssues" destination="qXg-5x-UyM" id="Zcg-1O-DPM"/>
+                        <outlet property="blockerIssues" destination="HmW-QQ-aLp" id="Ofm-t4-AYc"/>
+                        <outlet property="criticalIssues" destination="40Z-V6-0rX" id="myy-o6-zEd"/>
+                        <outlet property="debt" destination="go5-D1-Bgh" id="Tq1-p1-QC3"/>
+                        <outlet property="issues" destination="AJa-6o-5kA" id="3vO-J6-Idr"/>
+                        <outlet property="qualityGateImage" destination="q5r-IN-WMq" id="Oel-QQ-Hrh"/>
+                        <outlet property="qualityGateMessage" destination="JQ5-5s-t6j" id="Nn4-A9-ws7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2897" y="-79"/>
+            <point key="canvasLocation" x="1965" y="189"/>
         </scene>
-        <!--SonarQube Projects-->
+        <!--Projects-->
         <scene sceneID="XjU-Pi-cYv">
             <objects>
                 <tableViewController id="oIa-nW-kag" customClass="ProjectsTable" customModule="SonarQube" customModuleProvider="target" sceneMemberID="viewController">
@@ -72,7 +236,7 @@
                                 <connections>
                                     <outlet property="projectNameLabel" destination="xHi-Ye-Zzu" id="3ue-CW-Dh7"/>
                                     <outlet property="qualityGateImage" destination="0HA-IC-eWa" id="Q0B-P4-p7x"/>
-                                    <segue destination="Qn8-mI-Rtd" kind="show" identifier="segueToDetails" id="Gvx-AC-LBD"/>
+                                    <segue destination="vXZ-lx-hvc" kind="show" identifier="segueToDetails" id="umT-hm-FOb"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -81,7 +245,7 @@
                             <outlet property="delegate" destination="oIa-nW-kag" id="IDK-h4-Us0"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="SonarQube Projects" id="wXO-aT-ARw"/>
+                    <navigationItem key="navigationItem" title="Projects" id="wXO-aT-ARw"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5jB-wE-8Hh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -106,24 +270,12 @@
             </objects>
             <point key="canvasLocation" x="429" y="153"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WiE-iE-nSD">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qn8-mI-Rtd" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="geN-Dj-5qa">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="HAk-NG-Qkl"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0X6-0m-hjd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2085" y="-79"/>
-        </scene>
     </scenes>
+    <resources>
+        <image name="BlockerSeverity" width="300" height="300"/>
+        <image name="CriticalSeverity" width="300" height="300"/>
+        <image name="InfoSeverity" width="300" height="300"/>
+        <image name="MajorSeverity" width="300" height="300"/>
+        <image name="MinorSeverity" width="300" height="300"/>
+    </resources>
 </document>

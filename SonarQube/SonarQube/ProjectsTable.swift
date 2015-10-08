@@ -15,9 +15,7 @@ class ProjectsTable: UITableViewController {
     var projects = SonarQubeAPI.getProjects()
     var selectedProject: SonarProject!
     
-    let qgImageOk = UIImage(named: "QualityGateOk")!
-    let qgImageError = UIImage(named: "QualityGateError")!
-    let qgImageWarn = UIImage(named: "QualityGateWarn")!
+
 
 
     override func viewDidLoad() {
@@ -49,15 +47,8 @@ class ProjectsTable: UITableViewController {
         
         cell.projectNameLabel.text = project.name
         
-        switch project.qualityGate {
-        case .orange:
-            cell.qualityGateImage.image = qgImageWarn
-        case .red:
-            cell.qualityGateImage.image = qgImageError
-        case .green:
-            cell.qualityGateImage.image = qgImageOk
-        }
-        cell.id = project.id
+        cell.qualityGateImage.image = QualityGateImages.image(project.qualityGate)
+        cell.project = project
         
         return cell
     }
@@ -65,9 +56,9 @@ class ProjectsTable: UITableViewController {
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
         if (segue.identifier == "segueToDetails") {
-            let detailsViewController = (segue.destinationViewController as! UINavigationController).viewControllers[0] as! ViewController;
+            let detailsViewController = segue.destinationViewController as! ViewController;
             let cell = sender as! ProjectCell
-            detailsViewController.projectId = cell.id
+            detailsViewController.project = cell.project
         }
     }
     

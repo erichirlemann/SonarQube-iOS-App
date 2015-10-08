@@ -11,11 +11,18 @@ import Foundation
 class SonarQubeAPI {
     
     static func getProjects()-> [SonarProject] {
-        let project = SonarProject(1, "My project", "OK")
         return [SonarProject(1, "Apache", "OK"), SonarProject(2, "Git", "ERROR"), SonarProject(3, "Apache Tika", "WARN")]
     }
     
     static func getProperties(project: SonarProject) -> [String: String] {
-        return ["blocker issues": "100", "debt": "1h15min"]
+        return [
+            "blocker issues": "104",
+            "critical issues": "0",
+            "major issues": "53",
+            "minor issues": "45533",
+            "info issues": "443",
+            "debt": "3d 1h",
+            "issues": "153"
+        ]
     }
 }

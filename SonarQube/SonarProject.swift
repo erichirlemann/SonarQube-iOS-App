@@ -25,6 +25,17 @@ class SonarProject {
                 return nil
             }
         }
+        
+        func getMessage()->String {
+            switch self {
+            case .orange:
+                return "The project has warnings"
+            case .red:
+                return "The project failed the quality gate"
+            case .green:
+                return "The project has passed the quality gate"
+            }
+        }
     }
     
     var id: Int

@@ -14,7 +14,7 @@ class ProjectCell: UITableViewCell {
     
     @IBOutlet weak var projectNameLabel: UILabel!
     @IBOutlet weak var qualityGateImage: UIImageView!
-    var id : Int!
+    var project : SonarProject!
     
     override func awakeFromNib() {
         super.awakeFromNib()
