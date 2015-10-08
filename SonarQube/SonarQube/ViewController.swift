@@ -10,14 +10,50 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
-    @IBOutlet weak var projectNameLabel: UILabel!
+    @IBOutlet weak var qualityGateMessage: UILabel!
+    @IBOutlet weak var qualityGateImage: UIImageView!
     
-    var projectId: Int!
+    @IBOutlet weak var issues: UILabel!
+    @IBOutlet weak var debt: UILabel!
+    
+    @IBOutlet weak var blockerIssues: UILabel!
+    @IBOutlet weak var criticalIssues: UILabel!
+    @IBOutlet weak var MajorIssues: UILabel!
+    @IBOutlet weak var MinorIssues: UILabel!
+    @IBOutlet weak var InfoIssues: UILabel!
+    
+    var project: SonarProject!
 
-    override func viewDidLoad() {
+    override func viewDidLoad(){
         super.viewDidLoad()
-        self.title = "Project #\(projectId)"
+        
+        title = "\(project.name)"
+        qualityGateMessage.text! = project.qualityGate.getMessage()
+        qualityGateImage.image = QualityGateImages.image(project.qualityGate)
+        
+        let properties = SonarQubeAPI.getProperties(project)
+        
+        for property in properties {
+            let value = property.1
+            switch property.0 {
+            case "issues":
+                issues.text! = value
+            case "debt":
+                debt.text! = value
+            case "blocker issues":
+                blockerIssues.text! = value
+            case "critical issues":
+                criticalIssues.text! = value
+            case "major issues":
+                MajorIssues.text! = value
+            case "minor issues":
+                MinorIssues.text! = value
+            case "info issues":
+                InfoIssues.text! = value
+            default:
+                break
+            }
+        }
     }
 
 }

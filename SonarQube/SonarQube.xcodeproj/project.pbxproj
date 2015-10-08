@@ -19,6 +19,8 @@
 		BF727AAA1BC65C0700BF799D /* ProjectsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AA91BC65C0700BF799D /* ProjectsTable.swift */; };
 		BF727AAC1BC65C6900BF799D /* SonarProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AAB1BC65C6900BF799D /* SonarProject.swift */; };
 		BF727AAE1BC65D7400BF799D /* SonarQubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */; };
+		BF7568891BC68C930020BCE1 /* QualityGateImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7568881BC68C930020BCE1 /* QualityGateImages.swift */; };
+		BF75688B1BC69E620020BCE1 /* UnderlinedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75688A1BC69E620020BCE1 /* UnderlinedLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		BF727AA91BC65C0700BF799D /* ProjectsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTable.swift; sourceTree = "<group>"; };
 		BF727AAB1BC65C6900BF799D /* SonarProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonarProject.swift; sourceTree = "<group>"; };
 		BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonarQubeAPI.swift; sourceTree = "<group>"; };
+		BF7568881BC68C930020BCE1 /* QualityGateImages.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QualityGateImages.swift; sourceTree = "<group>"; };
+		BF75688A1BC69E620020BCE1 /* UnderlinedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlinedLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +75,7 @@
 		BF727A781BC650A300BF799D = {
 			isa = PBXGroup;
 			children = (
+				BF75688A1BC69E620020BCE1 /* UnderlinedLabel.swift */,
 				BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */,
 				BF727AAB1BC65C6900BF799D /* SonarProject.swift */,
 				6AD4D3961BC68A5F00A47488 /* SwiftyJSON.swift */,
@@ -101,6 +106,7 @@
 				BF727A8D1BC650A400BF799D /* Images.xcassets */,
 				BF727A8F1BC650A400BF799D /* LaunchScreen.xib */,
 				BF727A841BC650A300BF799D /* Supporting Files */,
+				BF7568881BC68C930020BCE1 /* QualityGateImages.swift */,
 			);
 			path = SonarQube;
 			sourceTree = "<group>";
@@ -234,10 +240,12 @@
 			files = (
 				BF727AAA1BC65C0700BF799D /* ProjectsTable.swift in Sources */,
 				BF727A891BC650A300BF799D /* ViewController.swift in Sources */,
+				BF75688B1BC69E620020BCE1 /* UnderlinedLabel.swift in Sources */,
 				BF727AA71BC6543100BF799D /* ProjectCell.swift in Sources */,
 				6AD4D3971BC68A5F00A47488 /* SwiftyJSON.swift in Sources */,
 				6AD4D3951BC6880900A47488 /* SonarDataManager.swift in Sources */,
 				BF727AAE1BC65D7400BF799D /* SonarQubeAPI.swift in Sources */,
+				BF7568891BC68C930020BCE1 /* QualityGateImages.swift in Sources */,
 				BF727AAC1BC65C6900BF799D /* SonarProject.swift in Sources */,
 				BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */,
 			);
