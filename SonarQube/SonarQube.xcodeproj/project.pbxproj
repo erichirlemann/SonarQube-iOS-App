@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A861BC650A300BF799D /* AppDelegate.swift */; };
+		BF727A891BC650A300BF799D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A881BC650A300BF799D /* ViewController.swift */; };
+		BF727A8C1BC650A300BF799D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF727A8A1BC650A300BF799D /* Main.storyboard */; };
+		BF727A8E1BC650A400BF799D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF727A8D1BC650A400BF799D /* Images.xcassets */; };
+		BF727A911BC650A400BF799D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF727A8F1BC650A400BF799D /* LaunchScreen.xib */; };
+		BF727A9D1BC650A400BF799D /* SonarQubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727A9C1BC650A400BF799D /* SonarQubeTests.swift */; };
+		BF727AA71BC6543100BF799D /* ProjectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AA61BC6543100BF799D /* ProjectCell.swift */; };
+		BF727AAA1BC65C0700BF799D /* ProjectsTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AA91BC65C0700BF799D /* ProjectsTable.swift */; };
+		BF727AAC1BC65C6900BF799D /* SonarProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AAB1BC65C6900BF799D /* SonarProject.swift */; };
+		BF727AAE1BC65D7400BF799D /* SonarQubeAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF727A971BC650A400BF799D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF727A791BC650A300BF799D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF727A801BC650A300BF799D;
+			remoteInfo = SonarQube;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BF727A811BC650A300BF799D /* SonarQube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonarQube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF727A851BC650A300BF799D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF727A861BC650A300BF799D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF727A881BC650A300BF799D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF727A8B1BC650A300BF799D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF727A8D1BC650A400BF799D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BF727A901BC650A400BF799D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BF727A961BC650A400BF799D /* SonarQubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonarQubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF727A9B1BC650A400BF799D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF727A9C1BC650A400BF799D /* SonarQubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonarQubeTests.swift; sourceTree = "<group>"; };
+		BF727AA61BC6543100BF799D /* ProjectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
+		BF727AA91BC65C0700BF799D /* ProjectsTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProjectsTable.swift; sourceTree = "<group>"; };
+		BF727AAB1BC65C6900BF799D /* SonarProject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonarProject.swift; sourceTree = "<group>"; };
+		BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SonarQubeAPI.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF727A7E1BC650A300BF799D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF727A931BC650A400BF799D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF727A781BC650A300BF799D = {
+			isa = PBXGroup;
+			children = (
+				BF727AAD1BC65D7400BF799D /* SonarQubeAPI.swift */,
+				BF727AAB1BC65C6900BF799D /* SonarProject.swift */,
+				BF727A831BC650A300BF799D /* SonarQube */,
+				BF727A991BC650A400BF799D /* SonarQubeTests */,
+				BF727A821BC650A300BF799D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BF727A821BC650A300BF799D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF727A811BC650A300BF799D /* SonarQube.app */,
+				BF727A961BC650A400BF799D /* SonarQubeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF727A831BC650A300BF799D /* SonarQube */ = {
+			isa = PBXGroup;
+			children = (
+				BF727AA91BC65C0700BF799D /* ProjectsTable.swift */,
+				BF727AA61BC6543100BF799D /* ProjectCell.swift */,
+				BF727A861BC650A300BF799D /* AppDelegate.swift */,
+				BF727A881BC650A300BF799D /* ViewController.swift */,
+				BF727A8A1BC650A300BF799D /* Main.storyboard */,
+				BF727A8D1BC650A400BF799D /* Images.xcassets */,
+				BF727A8F1BC650A400BF799D /* LaunchScreen.xib */,
+				BF727A841BC650A300BF799D /* Supporting Files */,
+			);
+			path = SonarQube;
+			sourceTree = "<group>";
+		};
+		BF727A841BC650A300BF799D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF727A851BC650A300BF799D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF727A991BC650A400BF799D /* SonarQubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF727A9C1BC650A400BF799D /* SonarQubeTests.swift */,
+				BF727A9A1BC650A400BF799D /* Supporting Files */,
+			);
+			path = SonarQubeTests;
+			sourceTree = "<group>";
+		};
+		BF727A9A1BC650A400BF799D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BF727A9B1BC650A400BF799D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF727A801BC650A300BF799D /* SonarQube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF727AA01BC650A400BF799D /* Build configuration list for PBXNativeTarget "SonarQube" */;
+			buildPhases = (
+				BF727A7D1BC650A300BF799D /* Sources */,
+				BF727A7E1BC650A300BF799D /* Frameworks */,
+				BF727A7F1BC650A300BF799D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonarQube;
+			productName = SonarQube;
+			productReference = BF727A811BC650A300BF799D /* SonarQube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF727A951BC650A400BF799D /* SonarQubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF727AA31BC650A400BF799D /* Build configuration list for PBXNativeTarget "SonarQubeTests" */;
+			buildPhases = (
+				BF727A921BC650A400BF799D /* Sources */,
+				BF727A931BC650A400BF799D /* Frameworks */,
+				BF727A941BC650A400BF799D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF727A981BC650A400BF799D /* PBXTargetDependency */,
+			);
+			name = SonarQubeTests;
+			productName = SonarQubeTests;
+			productReference = BF727A961BC650A400BF799D /* SonarQubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF727A791BC650A300BF799D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = SonarSource;
+				TargetAttributes = {
+					BF727A801BC650A300BF799D = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					BF727A951BC650A400BF799D = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = BF727A801BC650A300BF799D;
+					};
+				};
+			};
+			buildConfigurationList = BF727A7C1BC650A300BF799D /* Build configuration list for PBXProject "SonarQube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF727A781BC650A300BF799D;
+			productRefGroup = BF727A821BC650A300BF799D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF727A801BC650A300BF799D /* SonarQube */,
+				BF727A951BC650A400BF799D /* SonarQubeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF727A7F1BC650A300BF799D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF727A8C1BC650A300BF799D /* Main.storyboard in Resources */,
+				BF727A911BC650A400BF799D /* LaunchScreen.xib in Resources */,
+				BF727A8E1BC650A400BF799D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF727A941BC650A400BF799D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF727A7D1BC650A300BF799D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF727AAA1BC65C0700BF799D /* ProjectsTable.swift in Sources */,
+				BF727A891BC650A300BF799D /* ViewController.swift in Sources */,
+				BF727AA71BC6543100BF799D /* ProjectCell.swift in Sources */,
+				BF727AAE1BC65D7400BF799D /* SonarQubeAPI.swift in Sources */,
+				BF727AAC1BC65C6900BF799D /* SonarProject.swift in Sources */,
+				BF727A871BC650A300BF799D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF727A921BC650A400BF799D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF727A9D1BC650A400BF799D /* SonarQubeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF727A981BC650A400BF799D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF727A801BC650A300BF799D /* SonarQube */;
+			targetProxy = BF727A971BC650A400BF799D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF727A8A1BC650A300BF799D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF727A8B1BC650A300BF799D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF727A8F1BC650A400BF799D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF727A901BC650A400BF799D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF727A9E1BC650A400BF799D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF727A9F1BC650A400BF799D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF727AA11BC650A400BF799D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SonarQube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BF727AA21BC650A400BF799D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SonarQube/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BF727AA41BC650A400BF799D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SonarQubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonarQube.app/SonarQube";
+			};
+			name = Debug;
+		};
+		BF727AA51BC650A400BF799D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SonarQubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonarQube.app/SonarQube";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF727A7C1BC650A300BF799D /* Build configuration list for PBXProject "SonarQube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF727A9E1BC650A400BF799D /* Debug */,
+				BF727A9F1BC650A400BF799D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF727AA01BC650A400BF799D /* Build configuration list for PBXNativeTarget "SonarQube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF727AA11BC650A400BF799D /* Debug */,
+				BF727AA21BC650A400BF799D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BF727AA31BC650A400BF799D /* Build configuration list for PBXNativeTarget "SonarQubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF727AA41BC650A400BF799D /* Debug */,
+				BF727AA51BC650A400BF799D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF727A791BC650A300BF799D /* Project object */;
+}
